@@ -1,0 +1,20 @@
+const utils = require('./utils')
+var Web3 = require('web3');
+var web3 = new Web3('ws://localhost:8545');
+
+const CustomToken = artifacts.require('CustomToken');
+
+contract('CustomToken', function(accounts) {
+  let customToken;
+
+  beforeEach(async () => {
+    customToken = await CustomToken.new();
+  })
+
+  /** publish() **/
+  it("should initialize test", async () => {
+      assert.equal(true, true, 'should initialize test');
+  });
+
+
+});

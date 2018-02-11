@@ -1,0 +1,20 @@
+{
+  "name": "erc20-token",
+  "version": "1.0.0",
+  "description": "Standard ERC20 Token for Ethereum.",
+  "author": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "./node_modules/.bin/run-with-testrpc --port 8545 'truffle test'",
+    "coverage": "SOLIDITY_COVERAGE=true ./node_modules/.bin/solidity-coverage && fuser -k -n tcp 8545",
+    "coverage-codecov": "SOLIDITY_COVERAGE=true ./node_modules/.bin/solidity-coverage && ./node_modules/.bin/codecov --token=3301b409-c5d1-4f24-8804-0d062c27f81a && fuser -k -n tcp 8545"
+  },
+  "license": "ISC",
+  "devDependencies": {
+    "codecov": "^3.0.0",
+    "run-with-testrpc": "^0.3.0",
+    "solidity-coverage": "^0.4.9",
+    "solium": "^1.1.3",
+    "web3": "^1.0.0-beta.29"
+  }
+}
