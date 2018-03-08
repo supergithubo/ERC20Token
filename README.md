@@ -40,6 +40,11 @@ or
 truffle migrate --reset
 ```
 
+## TODO
+- JS/Solidity test
+- Capped feature
+- Pausable feature
+
 ## License
 
 All smart contracts are released under GPL v.3.
