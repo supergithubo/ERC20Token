@@ -17,7 +17,7 @@ contract CustomToken is StandardToken, BurnableToken, MintableToken {
     string public symbol;
     uint8 public decimals = 18;
 
-    function SygToken(
+    function CustomToken(
         uint256 _initialAmount,
         string _tokenName,
         uint8 _decimalUnits,
