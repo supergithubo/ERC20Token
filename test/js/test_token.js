@@ -8,7 +8,7 @@ contract('CustomToken', function(accounts) {
   let customToken;
 
   beforeEach(async () => {
-    customToken = await CustomToken.new();
+    customToken = await CustomToken.new(100000000, 'Custom Token', 18, 'TKN');
   })
 
   /** publish() **/
